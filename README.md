@@ -11,7 +11,7 @@ This app is geared towards a small business owner. It will allow them to write a
 - [Usage](#usage)
 - [Contributors](#contributors)
 - [Instructions](#instructions)
-- [Link](#link)
+- [Links](#links)
 - [Screenshot](#screenshot)
 - [Questions](#questions)
 
@@ -32,8 +32,8 @@ Jung (David) Lee
 - To delete, click on the trash icon
 - To go back to your note, click on the title of the note you wish to revisit
 
-## Link
-https://boiling-river-70037.herokuapp.com/
+## Links
+https://boiling-river-70037.herokuapp.com/ <br />
 https://github.com/koreanstig/week11biznotetaker
 
 ## Screenshot
