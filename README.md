@@ -1,5 +1,5 @@
 
-<h1 align="center">Week 11 Biz Note Taker</h1>
+<h1>Week 11 Biz Note Taker</h1>
     
 ![badge](https://img.shields.io/badge/license-Open-brightgreen)<br />
 

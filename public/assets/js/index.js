@@ -2,7 +2,7 @@ let noteTitle;
 let noteText;
 let saveNoteBtn;
 let newNoteBtn;
-let noteList;
+let noteList ;
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -11,8 +11,6 @@ if (window.location.pathname === '/notes') {
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
 }
-
-let noteId = 1;
 
 // Show an element
 const show = (elem) => {
@@ -86,12 +84,12 @@ const handleNoteDelete = (e) => {
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
   if (activeNote.id === noteId) {
-    activeNote = {};
+      activeNote = {};
   }
 
   deleteNote(noteId).then(() => {
-    getAndRenderNotes();
-    renderActiveNote();
+      getAndRenderNotes();
+      renderActiveNote();
   });
 };
 

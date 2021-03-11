@@ -1,32 +1,13 @@
 const path = require('path');
 
-module.exports = function (app) {
-    // html GET request
+module.exports = (app) => {
+    // GET html files
     app.get('/', (req, res)=> {
-        res.sendFile(path.join(__dirname, '../public/index.html'), err => {
-            if (err) console.error(err);
-        });
+        res.sendFile(path.join(__dirname, '../public/index.html'));
     });
     
     app.get('/notes', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/notes.html'), err => {
-            if (err) console.error(err);
-        });
+        res.sendFile(path.join(__dirname, '../public/notes.html'));
     });
 
-    // GET css file
-    app.get('/assets/css/styles.css', (req, res) =>{
-        res.sendFile(path.join(__dirname, "../public/assets/css/styles.css"), err => {
-            if (err) console.error(err);
-        });
-    });
-
-    // GET js file
-    app.get("/assets/js/index.js", (req,res)=>{
-        res.sendFile(path.join(__dirname, "../public/assets/js/index.js"), err => {
-            if (err) console.error(err);
-        });
-    })
-    
-    
 }
